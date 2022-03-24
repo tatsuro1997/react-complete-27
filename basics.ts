@@ -16,10 +16,12 @@ let hobbies: string[];
 
 hobbies = ['Sports', 'Cooking'];
 
-let person: {
+type Person = {
     name: string;
     age: number;
 };
+
+let person: Person;
 
 person = {
     name: 'max',
@@ -30,11 +32,8 @@ person = {
 //     isEmployee: true
 // }
 
+let people: Person[];
 
-let people: {
-    name: string;
-    age: number;
-}[];
 
 // Type inference
 
