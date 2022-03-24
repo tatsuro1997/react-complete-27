@@ -10,6 +10,28 @@ let isInstructor: boolean;
 
 isInstructor = true;
 
-// let hobbies: null;
+// More complex types
 
-// hobiies = 12;
+let hobbies: string[];
+
+hobbies = ['Sports', 'Cooking'];
+
+let person: {
+    name: string;
+    age: number;
+};
+
+person = {
+    name: 'max',
+    age: 32
+}
+
+// person = {
+//     isEmployee: true
+// }
+
+
+let people: {
+    name: string;
+    age: number;
+}[];
