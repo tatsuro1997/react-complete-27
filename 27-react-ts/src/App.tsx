@@ -1,6 +1,6 @@
 import Todos from './components/Todos';
 import Todo from './modals/todo';
-import './App.css';
+import NewTodo from './components/NewTodo';
 
 function App() {
   const todos = [
@@ -8,8 +8,13 @@ function App() {
     new Todo('Learn TS'),
   ];
 
+  const addTodoHanlder = (todoText: string) => {
+
+  };
+
   return (
     <div>
+      <NewTodo onAddTodo={addTodoHanlder} />
       <Todos items={todos} />
     </div>
   );
